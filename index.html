@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="divider smartwatch-text" id="section1">SmartWatch</div>
+        <div class="divider smartwatch-container" id="section2">
+            <div class="smartwatch" id="watch-face">
+                <section id="stime"></section>
+                <!-- <section class="daytime">
+                    <section id="time"></section>
+                    <section id="day"></section>
+                </section> -->
+                <!-- HOME -->
+                <div class="player">
+  
+                    <!-- Define the section for displaying details -->
+                    <div class="details">
+                      <div class="track-art"></div>
+                      <div class="playpause-track" onclick="playpauseTrack()">
+                        <i class="far fa-play-circle fa-3x"></i>
+                      </div>
+                      <div class="track-details">
+                      <div class="track-name">Track Name</div>
+                      <span class="track-artist">Track Artist</span>
+                    </div>
+                    </div>
+                  
+                    <!-- Define the section for displaying track buttons -->
+                    <div class="buttons">
+                      <div class="prev-track" onclick="prevTrack()">
+                        <i class="fa fa-step-backward fa-1x"></i>
+                      </div>
+                      <div class="slider_container">
+                        <input type="range" min="1" max="100"
+                          value="0" class="seek_slider" onchange="seekTo()">
+                      </div>
+                      <div class="next-track" onclick="nextTrack()">
+                        <i class="fa fa-step-forward fa-1x"></i>
+                      </div>
+                    </div>
+                    <ol class="music-list">
+
+                    </ol>
+                  </div>
+                  <div class="icons">
+                    <i class='far fa-comments'></i>
+                    <i class='fas fa-music'></i>
+                    <i class='far fa-clock'></i>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./data.js"></script>
+<script src="./app.js"></script>
+</html>
